@@ -305,7 +305,8 @@ class IntroV(EventReceiver):
                 self.painting = False
                 print_mini_tutorial()
                 pygame.mixer.init()
-                music_snd = pygame.mixer.Sound('assets/80s_vibe.mp3')
+                music_snd = pygame.mixer.Sound('assets/ndimensions-zik.ogg')
+                music_snd.set_volume(0.25)
                 music_snd.play(-1)
 
 
@@ -325,6 +326,10 @@ def run_game():
     game_ctrl.turn_on()
     game_ctrl.loop()
     kataen.cleanup()
+    print('Tech demo for the Kata.games new platform(https://kata.games)')
+    
+    print('Music by Matthew Pablo')
+    print('http://www.matthewpablo.com')
 
 
 if __name__=='__main__':
